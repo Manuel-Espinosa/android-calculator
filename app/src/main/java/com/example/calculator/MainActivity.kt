@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         number1EditText = findViewById(R.id.number1EditText)
         number2EditText = findViewById(R.id.number2EditText)
     }
-
+    @Suppress("UNUSED_PARAMETER")
     fun performSum(view: View) {
         try {
             val num1 = number1EditText.text.toString().toFloat()
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             showToast("Please enter valid numbers")
         }
     }
-
+    @Suppress("UNUSED_PARAMETER")
     fun performDivision(view: View) {
         try {
             val num1 = number1EditText.text.toString().toFloat()
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun formatResult(result: Float): String {
         // Check if the result is an integer value
-        return if (result % 1.0 == 0f) {
+        return if (result % 1f == 0f) {
             result.toInt().toString()
         } else {
             // Round to 2 decimal places if the result is a float

@@ -13,7 +13,7 @@
         android:id="@+id/number1EditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number" />
+        android:inputType="numberDecimal" />
 
     <TextView
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
         android:id="@+id/number2EditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number" />
+        android:inputType="numberDecimal" />
 
     <Button
         android:layout_width="match_parent"
